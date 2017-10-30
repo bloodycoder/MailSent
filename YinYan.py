@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import random
 import json
 import PicardMail
@@ -12,6 +13,6 @@ def main():
     textToSent = sentArray[random.randint(0,len(sentArray)-1)]
     robot = PicardMail.PicardSendMail()
     robot.Login()
-    robot.SendAnEmail(email=textToSent,subject="阴阳预告",destination="510297127@qq.com")
+    robot.SendAnEmail(email=textToSent,subject="闃撮槼棰勫憡",destination="510297127@qq.com")
     robot.Quit()
 main()
