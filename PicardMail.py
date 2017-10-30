@@ -29,7 +29,3 @@ class PicardSendMail:
         self.mailserver.sendmail(self.sender,destination,mail.as_string())
     def Quit(self):
         self.mailserver.quit()
-robot = PicardSendMail()
-robot.Login()
-robot.SendAnEmail(email="hello",subject="hello",destination="510297127@qq.com")
-robot.Quit()
