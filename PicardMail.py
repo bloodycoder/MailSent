@@ -14,7 +14,7 @@ class PicardSendMail:
         self.encoding = 'utf-8'
         self.SMTPServer = "smtp.qq.com"
         self.sender = "510297127@qq.com"
-        self.password = "uapapscxfsbjbida"
+        self.password = "wagtzsaggqpbbige"
         self.qqMailPort = 587
     def Login(self):
         self.mailserver = smtplib.SMTP(self.SMTPServer,self.qqMailPort)
@@ -29,3 +29,7 @@ class PicardSendMail:
         self.mailserver.sendmail(self.sender,destination,mail.as_string())
     def Quit(self):
         self.mailserver.quit()
+robot = PicardSendMail()
+robot.Login()
+robot.SendAnEmail(email="hello",subject="hello",destination="510297127@qq.com")
+robot.Quit()
